@@ -24,8 +24,9 @@ func gDEV(key string) string {
 	return os.Getenv(key)
 }
 
-var buffer = make([][]byte, 0)
 
+// airhorn cmd
+var buffer = make([][]byte, 0)
 func loadAH() error {
 	file, err := os.Open("assets/airhorn.dca")
 	if err != nil {
