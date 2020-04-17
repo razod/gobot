@@ -28,16 +28,12 @@ func pongCMD(s *discordgo.Session, m *discordgo.MessageCreate) {
 func airhornCMD(s *discordgo.Session, m *discordgo.MessageCreate) {
 	c, err := s.State.Channel(m.ChannelID)
 	if err != nil {
-		// Could not find channel.
 		return
 	}
-	// Find the guild for that channel.
 	g, err := s.State.Guild(c.GuildID)
 	if err != nil {
-		// Could not find guild.
 		return
 	}
-	// Look for the message sender in that guild's current voice states.
 	for _, vs := range g.VoiceStates {
 		if vs.UserID == m.Author.ID {
 			err = playSound(s, g.ID, vs.ChannelID)
