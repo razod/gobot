@@ -1,7 +1,7 @@
 package main
 
 // Token ...
-var Token string = "NzAwMDIzMTIwMDA1ODI0NjA0.Xpc5XA.DpteewYxPugvbx1CEgddKpMMPwY"
+var Token string = "UR TOKEN HERE"
 
 // Prefix ...
 var Prefix string = "g!"
