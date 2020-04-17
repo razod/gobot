@@ -14,6 +14,8 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		pingCMD(s, m)
 	} else if strings.HasPrefix(m.Content, Prefix+"pong") {
 		pongCMD(s, m)
+	}else if strings.HasPrefix(m.Content, Prefix+"ah") {
+		airhornCMD(s, m)
 	}
 }
 

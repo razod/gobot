@@ -19,6 +19,7 @@ func Client() {
 	dg.AddHandler(messageCreate)
 	dg.AddHandler(ready)
 	dg.AddHandler(guildCreate)
+	loadSound("./assets/airhorn.dca")
 	err = dg.Open()
 	if err != nil {
 		fmt.Println("error opening connection,", err)
