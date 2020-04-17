@@ -1,7 +1,8 @@
 package main
 
+
 // Token ...
-var Token string = "UR TOKEN HERE"
+var Token string = gDEV("TOKEN")
 
 // Prefix ...
 var Prefix string = "g!"
