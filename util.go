@@ -26,8 +26,8 @@ func gDEV(key string) string {
 
 var buffer = make([][]byte, 0)
 
-func loadSound(path string) error {
-	file, err := os.Open(path)
+func loadAH() error {
+	file, err := os.Open("assets/airhorn.dca")
 	if err != nil {
 		fmt.Println("Error opening dca file :", err)
 		return err
